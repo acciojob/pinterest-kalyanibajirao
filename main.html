@@ -5,64 +5,43 @@
 <head>
 	<link rel="stylesheet" href="styles.css">
 <style>
-        body {
-            margin: 0;
-            padding: 0;
-            font-family: 'Arial', sans-serif;
-        }
+  /* Container styles */
+  .hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+  }
 
-        .hero {
-            position: relative;
-            background: url('https://images.pexels.com/photos/2662116/pexels-photo-2662116.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1') center/cover no-repeat;
-            height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
+  /* Image styles */
+  .hero img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
 
-        .hero::before {
-            content: "";
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(0, 0, 0, 0.5); /* Add a semi-transparent overlay */
-        }
-
-        .hero-content {
-            text-align: center;
-            color: #fff;
-            z-index: 1;
-        }
-
-        .hero-title {
-            font-size: 2rem;
-            margin-bottom: 1rem;
-        }
-
-        .hero-subtitle {
-            font-size: 1rem;
-            margin-bottom: 2rem;
-        }
-
-        .hero-button {
-            padding: 10px 20px;
-            background-color: #ff5722;
-            color: #fff;
-            border-radius: 5px;
-            text-decoration: none;
-            font-weight: bold;
-        }
-    </style>
+  /* Button or Link styles */
+  .hero button,
+  .hero a {
+    padding: 10px 20px;
+    background-color: #bd081c;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+  }
+</style>
 </head>
 <body>
-    <header class="hero">
-        <div class="hero-content">
-            <h1 class="hero-title">Your Animated Text Goes Here</h1>
-            <p class="hero-subtitle">A brief description of your content</p>
-            <a href="#" class="hero-button">Get Started</a>
-        </div>
-    </header>
+<div class="hero">
+  <img src=https://images.pexels.com/photos/2662116/pexels-photo-2662116.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Hero Image">
+  <div class="overlay"></div>
+  <div class="content">
+    <h1>Welcome to Pinterest-like Hero Section</h1>
+    <p>Explore now to discover amazing content</p>
+    <a href="#" class="explore-btn">Explore Now</a>
+  </div>
+</div>
 </body>
 </html>
